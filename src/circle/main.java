@@ -9,18 +9,18 @@ import javafx.stage.Stage;
 
 public class main extends Application {
 
-	public static double WorldWidth = 400;
+	public static double WorldWidth = 400;//Skapar variabler som representerar höjden/längden på scenen 
 	public static double WorldHeight = 400;
 
 	public void start(Stage stage) throws Exception {
 		
 		Group root = new Group();
-		Scene scene = new Scene(root, WorldWidth, WorldHeight, Color.WHITE);
-		Circle cir = new Circle(20, Color.BLUE);
+		Scene scene = new Scene(root, WorldWidth, WorldHeight, Color.WHITE);//Ger scenen höjd/längd
+		Circle cir = new Circle(20, Color.BLUE);//Skapar en cirkel med radien 20 och färgen blå
 		
 		
-		cir.setTranslateY(WorldHeight/2);
-		cir.setTranslateX(WorldWidth/2);
+		cir.setTranslateY(WorldHeight/2);//placerar cirkeln vid halva höjden av scenen
+		cir.setTranslateX(WorldWidth/2);//placerar cirkeln vid halva bredden av scenen
 		
 		
 		
